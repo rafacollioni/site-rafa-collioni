@@ -14,7 +14,6 @@ body{
     font-size: 100%;
     font-family: 'Josefin Sans', sans-serif;
     background-color: var(--backgroundColor);
-    padding: 2rem;
 }
 
 /* List and Anchor Reset */
@@ -33,14 +32,61 @@ body section header nav ul li a, body section header nav ul{
     box-sizing: border-box;
 }
 
-/* Section Default */
-.full-screen-section{
-    width: 100vw;
-    height: 100vh;
+/* Default FlexBox Wrapper */
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 
+/* Section Default */
+.full-screen-section{
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+}
+
+/* 📰 START of Landing Section 📰 */
+
+/* NavBar Layout */
 .nav-wrapper{
     justify-content: center;
     display:flex;
     gap: 5rem;
 }
+
+/* NavBar Style (kind of) */
+.nav-item a{
+    color: white;
+    letter-spacing: 0.33em;
+}
+
+/* LandingPage Forced Background Image */
+.background-image{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./images/BannerFundo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -99;
+}
+
+/* Responsive Main Logo */
+.logo{
+    width: clamp(19rem,20vw, 30vw);
+    height: auto;
+}
+
+/* Responive Main Picture */
+.picture{
+    width: clamp(24rem, 29vw, 30vw);
+    position: absolute;
+    bottom: 0;
+}
+
+/* 📰 END of Landing Section 📰 */
