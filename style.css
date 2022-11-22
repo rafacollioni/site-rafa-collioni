@@ -167,7 +167,7 @@ body section header nav ul {
 
 /* Responsive Main Logo */
 .logo {
-    width: clamp(16rem, 20vw, 30vw);
+    width: clamp(14rem, 20vw, 30vw);
     height: auto;
     transition: ease-in-out 0.3s;
     margin-top: 1rem;
@@ -180,14 +180,15 @@ body section header nav ul {
 
 /* Responive Main Picture */
 .picture {
-    width: clamp(27rem, 29vw, 30vw);
+    width: clamp(27rem, 28vw, 30vw);
     position: absolute;
     bottom: 0;
     transition: ease-in-out 0.3s;
+    overflow: hidden;
 }
 
 .nav-active {
-    width: 19rem;
+    width: 18rem;
     transition: ease-in-out 0.3s;
 }
 
@@ -221,7 +222,7 @@ body section header nav ul {
 .personal-info p {
     color: white;
     font-size: clamp(1rem, 1.6rem, 2rem);
-    line-height: px;
+    line-height: 28px;
     text-align: justify;
     font-weight: 300;
     width: clamp(250px, 700px, 80vw);
