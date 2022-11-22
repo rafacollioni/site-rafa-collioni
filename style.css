@@ -233,6 +233,10 @@ body section header nav ul {
     width: clamp(250px, 700px, 80vw);
 }
 
+.personal-info a{
+    color: var(--colorMain);    
+}
+
 /* Left Button Styling */
 .contrate-button {
     border-radius: var(--default-radius);
